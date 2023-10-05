@@ -10,7 +10,9 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig tsconfig.json --watch",
 		"test": "vitest",
 		"lint": "prettier --plugin-search-dir my-app --check . && eslint .",
-		"format": "prettier --plugin-search-dir my-app --write ."
+		"format": "prettier --plugin-search-dir my-app --write .",
+		"database:dump": "mongodump --uri=\\$DATABASE_URL --authenticationDatabase=admin --gzip --archive=database_dump.gz",
+		"database:restore": "env-cmd cross-env-shell mongorestore --verbose --drop --uri=\\$DATABASE_URL --nsInclude='dev-storycoder.stories' --gzip --archive=database_dump.gz"
 	},
 	"devDependencies": {
 		"@magidoc/plugin-svelte-marked": "^4.1.0",
@@ -20,6 +22,8 @@
 		"@types/node": "^20.8.0",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
+		"cross-env": "^7.0.3",
+		"env-cmd": "^10.1.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -37,7 +41,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@prisma/client": "^5.3.1",
-		"svelte-adapter-bun": "^0.5.0"
+		"@prisma/client": "^5.3.1"
 	}
 }
