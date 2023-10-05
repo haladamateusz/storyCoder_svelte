@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+type StoriesStoryProperties {
+  author       String?
+  category     String
+  codingIdeas  String[]
+  codingLevel  String?
+  imageLicense String?
+  imageSource  String?
+  language     String
+  storyContent String[]
+  storyGenre   String[]
+  storyLicense String
+  title        String
+}
+
+model stories {
+  id              String                 @id @default(auto()) @map("_id") @db.ObjectId
+  content         String
+  slug            String
+  storyProperties StoriesStoryProperties
+}
