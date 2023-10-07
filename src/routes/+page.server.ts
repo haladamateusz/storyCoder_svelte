@@ -1,8 +1,7 @@
 import type { PageServerLoad } from './$types';
-import { PrismaClient } from '@prisma/client'
+import { prisma } from '$lib/server/prisma';
 export const load: PageServerLoad = async () => {
 
-    const prisma = new PrismaClient()
     const stories = await prisma.stories.findMany();
 
     const storyPreview = stories.map((story) => ({
