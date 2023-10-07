@@ -17,11 +17,13 @@ Prerequisites:
 
 ## Remaining TODOs
 
-- [ ] Add story-specific-page.
-- [ ] Add some styles.
-- [ ] Remove titles from markdowns.
-- [ ] Create a deployment environment on a free tier cloud.
-- [ ] Standardize data formating in contents (content is the property in database that holds whole story parsed from markdown file).
+- [ ] Add story-specific-page
+- [ ] Add some styles
+- [x] Remove titles from markdowns content
+- [ ] Create a deployment environment
+- [ ] Standardize story structure 
+- [ ] Add a story editor (requires auth)
+- [ ] Add Auth mechanism for editors (like [Lucia](https://lucia-auth.com/) or [Auth0](https://auth0.com/)) 
 
 [//]: # (## Building)
 
