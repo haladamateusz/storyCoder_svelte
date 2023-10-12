@@ -3,6 +3,7 @@
 ## How to run it locally
 
 Prerequisites:
+
 - [Node.js](https://nodejs.org/en/) installed
 - [Docker](https://www.docker.com/) installed
 - [MongoDB Database Tools](https://www.mongodb.com/docs/database-tools/installation/installation/) installed
@@ -14,31 +15,27 @@ Prerequisites:
 5. run `npx prisma generate` to generate prisma client
 6. run `npm run dev` to start the app in development mode
 
-
 ## Remaining TODOs
 
 - [ ] Add story-specific-page
+- [ ] Add [husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) for code consistency
+- [ ] Add [SkeletonUI](https://www.skeleton.dev/) as UI Toolkit
+- [ ] Add [Airbnb eslint](https://www.npmjs.com/package/eslint-config-airbnb) configuration
 - [ ] Add some styles
 - [x] Remove titles from markdowns content
 - [ ] Create a deployment environment
-- [ ] Standardize story structure 
+- [ ] Standardize story structure
 - [ ] Add a story editor (requires auth)
-- [ ] Add Auth mechanism for editors (like [Lucia](https://lucia-auth.com/) or [Auth0](https://auth0.com/)) 
+- [ ] Add Auth mechanism for editors (like [Lucia](https://lucia-auth.com/) or [Auth0](https://auth0.com/))
 
-[//]: # (## Building)
-
-[//]: # ()
-[//]: # (To create a production version of your app:)
-
-[//]: # ()
-[//]: # (```bash)
-
-[//]: # (npm run build)
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # (You can preview the production build with `npm run preview`.)
-
-[//]: # ()
-[//]: # (> To deploy your app, you may need to install an [adapter]&#40;https://kit.svelte.dev/docs/adapters&#41; for your target environment.)
+[//]: # '## Building'
+[//]: #
+[//]: # 'To create a production version of your app:'
+[//]: #
+[//]: # '```bash'
+[//]: # 'npm run build'
+[//]: # '```'
+[//]: #
+[//]: # 'You can preview the production build with `npm run preview`.'
+[//]: #
+[//]: # '> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.'

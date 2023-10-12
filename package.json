@@ -11,9 +11,9 @@
 		"test": "vitest",
 		"lint": "prettier --plugin-search-dir my-app --check . && eslint .",
 		"format": "prettier --plugin-search-dir my-app --write .",
-		"database-container:build" : "docker run -d --name storycoder -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=pass123 mongo",
-		"database-container:start" : "docker start storycoder",
-		"database-container:stop" : "docker stop storycoder",
+		"database-container:build": "docker run -d --name storycoder -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=pass123 mongo",
+		"database-container:start": "docker start storycoder",
+		"database-container:stop": "docker stop storycoder",
 		"database:dump": "env-cmd cross-env-shell mongodump --uri=\\$DATABASE_URL --authenticationDatabase=admin --gzip --archive=database_dump.gz",
 		"database:restore": "env-cmd cross-env-shell mongorestore --verbose --drop --uri=\\$DATABASE_URL --nsInclude='dev-storycoder.stories' --gzip --archive=database_dump.gz"
 	},
