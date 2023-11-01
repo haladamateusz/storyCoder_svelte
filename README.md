@@ -20,7 +20,7 @@ Prerequisites:
 
 - [ ] Add story-specific-page
 - [ ] Add [husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) for code consistency
-- [ ] Add [SkeletonUI](https://www.skeleton.dev/) as UI Toolkit
+- [x] Add [SkeletonUI](https://www.skeleton.dev/) as UI Toolkit
 - [ ] Add [Airbnb eslint](https://www.npmjs.com/package/eslint-config-airbnb) configuration
 - [ ] Add some styles
 - [x] Remove titles from markdowns content
@@ -28,3 +28,5 @@ Prerequisites:
 - [ ] Standardize story structure
 - [ ] Add a story editor (requires auth)
 - [ ] Add Auth mechanism for editors (like [Lucia](https://lucia-auth.com/) or [Auth0](https://auth0.com/))
+- [ ] Add [eslint-plugin-svelte](https://www.npmjs.com/package/eslint-plugin-svelte)
+- [ ] Add [prettier-plugin-svelte](https://github.com/sveltejs/prettier-plugin-svelte/)
